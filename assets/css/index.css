@@ -15,7 +15,7 @@ header {
     position: fixed;
     height: 94px;
     display: flex;
-    z-index: 9999;
+    z-index: 10;
     align-items: center;
     justify-content: space-between;
     padding: 0px 162px;
@@ -54,6 +54,7 @@ header ul li {
     border-radius: 8px;
     width: 98px;
     height: 55px;
+    cursor: pointer;
 
 }
 
@@ -70,6 +71,7 @@ header ul li:hover {
     width: 98px;
     height: 34px;
 
+
 }
 
 .header-botoes img {
@@ -79,20 +81,29 @@ header ul li:hover {
 
 .principal {
     height: 1190px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .imagem-fundo {
     height: 860px;
     background-image: url(../imgs/fundo-catalogo.png);
-    background-repeat: no-repeat; 
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.continua{
+.logo-meio{
+    position: absolute;
+    width: 455;
+    height: 538;
+
+}
+.continua {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,17 +112,19 @@ header ul li:hover {
     padding: 0px 412px;
 }
 
-.continua h1{
+.imagem-fundo h1 {
     color: #FFFFFF;
+    justify-self: center;
+    align-self: flex-end;
     font-size: 58px;
 }
 
-.continua p{
+.continua p {
     color: #999999;
     font-size: 18px;
 }
 
-.continua button{
+.continua button {
     background-color: #0088FF;
     display: flex;
     align-items: center;
@@ -121,4 +134,11 @@ header ul li:hover {
     border-radius: 8px;
     width: 288px;
     height: 64px;
+    border: none;
+    cursor: pointer;
+}
+
+.continua button:hover {
+    transform: scale(1.05);
+    background-color: #1b93fd;
 }
